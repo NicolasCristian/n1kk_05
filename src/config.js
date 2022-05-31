@@ -37,16 +37,16 @@ const colors = {
 
 const routes = {
   "blog": "https://devjourney.osouza.de/blog",
+  "blog-pt": "https://devjourney.osouza.de/pt/blog",
   "devjourney": "https://devjourney.osouza.de",
   // "discord": "",
   // "email": "",
   // "facebook": "",
-  "gitlab": "https://gitlab.com/osouza.de/bah-link-tri",
+  "sourcecode": "https://gitlab.com/osouza.de/bah-link-tri",
   "hackerone": "https://hackerone.com",
   "hackthebox": "https://hackthebox.com",
   // "instagram": "",
   // "linkedin": "",
-  "tryhackme": "https://tryhackme.com/",
   // "website": "",
   // "whatsapp": "",
 }
@@ -85,10 +85,17 @@ const icons = [
 const items = [
   {
     "title": "//whoami",
-    "content": "I'm a free alternative to link repositories services!</p><br/><small style='font-style:italic; float: right'>Open source and always free!</small><br/>",
+    "content": "I'm a free and Open Source alternative to link repository services!</p><br/><small style='font-style:italic; float: right'>Open source and always free!</small><br/>",
     "icon": <FaAngleDown />,
     "type": "accordion",
     "expanded": true
+  },
+  {
+    "title": "My source code",
+    "content": "BahLinkTri repository!",
+    "icon": <FaGitlab />,
+    "route": "sourcecode",
+    "type": "link",
   },
   {
     "title": "Dev Journey",
@@ -102,13 +109,6 @@ const items = [
     "content": "My personal blog!",
     "icon": <FaCommentDots />,
     "route": "blog",
-    "type": "link",
-  },
-  {
-    "title": "GitLab",
-    "content": "BahLinkTri repository!",
-    "icon": <FaGitlab />,
-    "route": "gitlab",
     "type": "link",
   },
   {
